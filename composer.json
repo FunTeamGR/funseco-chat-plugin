@@ -1,0 +1,43 @@
+{
+    "$schema": "https://getcomposer.org/schema.json",
+    "name": "funseco/chat-plugin",
+    "description": "Funseco player chat commands — /help, /players, /pm, /me, presets and server info",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.2",
+        "funseco/core": "@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Funseco\\Chat\\": "src/"
+        }
+    },
+    "extra": {
+        "funseco": {
+            "id": "chat",
+            "name": "Chat",
+            "description": "player chat commands — /help, /players, /pm, /me, presets and server info",
+            "provider": "Funseco\\Chat\\ChatCommandsServiceProvider",
+            "locked": true
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "require-dev": {
+        "funseco/admin-plugin": "@dev",
+        "funseco/messages-plugin": "@dev",
+        "mockery/mockery": "^1.6",
+        "orchestra/testbench": "^10.0",
+        "phpunit/phpunit": "^11.5.3"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Funseco\\Chat\\Tests\\": "tests/"
+        }
+    }
+}
