@@ -14,7 +14,7 @@ return [
         'track'            => '{#server}> Current track {#highlite}{1} {#server}by {#highlite}{2}  {#server}Author: {#highlite}{3} {#server}Gold: {#highlite}{4} {#server}Silver: {#highlite}{5} {#server}Bronze: {#highlite}{6} {#server}Cost: {#highlite}{7}',
         'time'             => '{#server}> {#interact}Current Server Time: {#highlite}$i {1}{#interact} on {#highlite}$i {2}',
         'nextmap'          => '{#server}> The next Challenge will be: {#highlite}{1}',
-        'nextenvmap'       => '{#server}> The next Challenge will be: {#timelite}[{1}] {#highlite}{2}',
+        'nextenvmap'       => '{#server}> The next Challenge will be: {#grey_light}[{1}] {#highlite}{2}',
         'bootme'           => '{#server}>> {#highlite}{1}$z$s{#message} just crushed and died. R.I.P.',
         'no_lastwin'       => '{#server}> {#error}No multi-page window available!',
         'no_victors'       => '{#server}> {#error}No victorious players found!',

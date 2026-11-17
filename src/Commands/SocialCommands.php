@@ -39,7 +39,7 @@ class SocialCommands implements Command, Described
 
         match ($this->command) {
             'pm'     => $this->pm($player, $args),
-            'me'     => $this->broadcast(Text::format('$i{1}$z$s$i {#emotic}{2}', $player->nickname, implode(' ', $args))),
+            'me'     => $this->broadcast(Text::format('$i{1}$z$s$i {#orange}{2}', $player->nickname, implode(' ', $args))),
             'bootme' => $this->bootme($player),
             'afk'    => $this->afk($player),
             default  => $this->preset($player, $args),
